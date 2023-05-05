@@ -10,7 +10,7 @@ AWS node EC2 Nginx Application Sample
 sudo yum install -y git
 ```
 
-## **3a. Install NodeJS**
+## **2. Install NodeJS - Option A**
 ```
 sudo yum install -y gcc-c++ make
 curl -sL https://rpm.nodesource.com/setup_18.x | sudo -E bash -
@@ -20,7 +20,7 @@ sudo yum install -y nodejs
 
 or
 
-## **3b. Install NodeJS**
+## **2. Install NodeJS - Option B**
 ```
 > curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.3/install.sh | bash
 > . ~/.nvm/nvm.sh
