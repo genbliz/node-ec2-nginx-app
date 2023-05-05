@@ -16,18 +16,17 @@ sudo yum update
 ```
 sudo yum install -y git
 ```
-
 ## **2. Install NodeJS - Option A**
+### **Option A**
+<small>Check https://github.com/nodesource/distributions for latest compartible distributions</small>
+
 ```
 sudo yum install -y gcc-c++ make
 curl -sL https://rpm.nodesource.com/setup_18.x | sudo -E bash -
-curl -sL https://rpm.nodesource.com/setup_16.x | sudo -E bash -
 sudo yum install -y nodejs
 ```
 
-or
-
-## **2. Install NodeJS - Option B**
+### **Option B**
 ```
 > curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.3/install.sh | bash
 > . ~/.nvm/nvm.sh
@@ -35,8 +34,22 @@ or
 ```
 
 ## **3. Configure systemd - For Auto Restart**
+
+### **Edit systemd**
 Edit `systemd.service` file to soothe your application
 
 ```
 sudo vim /etc/systemd/system/<Your_App_Name>.service
 ```
+
+### **Enable Service**
+
+```
+sudo systemctl enable <Your_App_Name>.service
+```
+
+### **Start Service**
+```
+sudo systemctl start <Your_App_Name>.service
+```
+**Note**: You can use command: `sudo systemctl start <Your_App_Name>.service` to restart the service when needed
