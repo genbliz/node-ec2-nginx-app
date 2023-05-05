@@ -1,0 +1,14 @@
+https://docs.aws.amazon.com/sdk-for-javascript/v2/developer-guide/setting-up-node-on-ec2-instance.html
+
+https://www.sammeechward.com/deploy-node-app-on-aws-ec2-amazon-linux-2
+
+https://dev.to/0xfedev/how-to-install-nginx-as-reverse-proxy-and-configure-certbot-on-amazon-linux-2023-2cc9
+
+https://www.sammeechward.com/nginx-reverse-proxy-on-aws-ec2-amazon-linux-2
+
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/get-set-up-for-amazon-ec2.html
+
+https://repost.aws/questions/QUNO13SFKYS2eiCt3f0lwP4Q/how-to-install-node-js-18-in-amazon-linux-2-ami
+
+https://www.ibm.com/docs/en/aix/7.1?topic=directories-displaying-contents-directory-ls-command
+

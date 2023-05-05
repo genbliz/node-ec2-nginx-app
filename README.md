@@ -51,3 +51,21 @@ sudo systemctl enable <Your_App_Name>.service
 sudo systemctl start <Your_App_Name>.service
 ```
 **Note**: You can use command: `sudo systemctl restart <Your_App_Name>.service` to restart the service when needed
+
+## **4. Install and Configure Nginx**
+
+### **Install Nginx**
+```
+ sudo yum install nginx
+```
+
+### **Enable Nginx**
+```
+sudo systemctl enable nginx
+```
+### **Start Nginx**
+```
+sudo systemctl start nginx
+```
+**Note**: You can use command: `sudo systemctl restart nginx` to restart nginx when needed
+
