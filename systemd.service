@@ -1,0 +1,16 @@
+[Unit]
+Description=<Your_App_Name>
+After=multi-user.target
+
+[Service]
+ExecStart=/path/to/node/bin /home/ec2-user/<your_app_dir>/index.js
+Restart=always
+RestartSec=10
+StandardOutput=syslog
+StandardError=syslog
+SyslogIdentifier=<Your_App_Name>
+User=ec2-user
+# EnvironmentFile=/home/ec2-user/<your_app_dir>/app.env
+
+[Install]
+WantedBy=multi-user.target

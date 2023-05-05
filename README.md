@@ -1,9 +1,16 @@
 # node-ec2-nginx-app
 AWS node EC2 Nginx Application Sample
 
-# STEPS
+
 
 ## Connect to your Linux instance as ec2-user using SSH
+
+## Update packages if needed
+```
+sudo yum update
+```
+
+## STEPS
 
 ## **1. Install Git**
 ```
@@ -25,4 +32,11 @@ or
 > curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.3/install.sh | bash
 > . ~/.nvm/nvm.sh
 > nvm install --lts
+```
+
+## **3. Configure systemd - For Auto Restart**
+Edit `systemd.service` file to soothe your application
+
+```
+sudo vim /etc/systemd/system/<Your_App_Name>.service
 ```
