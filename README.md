@@ -1,8 +1,6 @@
 # node-ec2-nginx-app
 AWS node EC2 Nginx Application Sample
 
-
-
 ## Connect to your Linux instance as ec2-user using SSH
 
 ## Update packages if needed
@@ -36,7 +34,7 @@ sudo yum install -y nodejs
 ## **3. Configure systemd - For Auto Restart**
 
 ### **Edit systemd**
-Edit `systemd.service` file to soothe your application
+Edit `systemd.service` file to soothe your application and paste it below:
 
 ```
 sudo vim /etc/systemd/system/<Your_App_Name>.service
@@ -52,4 +50,4 @@ sudo systemctl enable <Your_App_Name>.service
 ```
 sudo systemctl start <Your_App_Name>.service
 ```
-**Note**: You can use command: `sudo systemctl start <Your_App_Name>.service` to restart the service when needed
+**Note**: You can use command: `sudo systemctl restart <Your_App_Name>.service` to restart the service when needed
