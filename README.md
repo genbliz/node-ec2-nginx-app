@@ -54,6 +54,8 @@ sudo systemctl start <Your_App_Name>.service
 
 ## **4. Install and Configure Nginx**
 
+### **Open port 80 and 443 on the EC@ console**
+
 ### **Install Nginx**
 ```
  sudo yum install nginx
@@ -69,3 +71,13 @@ sudo systemctl start nginx
 ```
 **Note**: You can use command: `sudo systemctl restart nginx` to restart nginx when needed
 
+### **Edit Nginx file**
+Edit **server** section of `nginx.conf` file to soothe your application and paste it below:
+
+```
+sudo vim /etc/nginx/nginx.conf
+```
+### **Test Nginx**
+```
+sudo nginx -t
+```
